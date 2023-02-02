@@ -1,6 +1,6 @@
 module.exports = app => {
     const tutorials = require("../controllers/tutorial.controller.js");
-    const jasper = require("../controllers/jasper.controller.js");
+    //const jasper = require("../controllers/jasper.controller.js");
   
     var router = require("express").Router();
   
@@ -25,7 +25,7 @@ module.exports = app => {
     // Delete all Tutorials
     router.delete("/", tutorials.deleteAll);
 
-    router.get("/file", jasper.get)
+    //router.get("/file", jasper.get)
 
     router.get("/plugins/servlet/applinks/listApplicationLinks", (req, res) => {
       res.json({ message: "Welcome to bezkoder application." });
