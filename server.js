@@ -23,6 +23,10 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to bezkoder application." });
 });
 
+app.get("/plugins/servlet/applinks/listApplicationLinks", (req, res) => {
+  res.json({ message: "Welcome to bezkoder application." });
+});
+
 require("./app/routes/turorial.routes")(app);
 
 // set port, listen for requests

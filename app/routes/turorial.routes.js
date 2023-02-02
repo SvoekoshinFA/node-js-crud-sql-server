@@ -27,9 +27,7 @@ module.exports = app => {
 
     //router.get("/file", jasper.get)
 
-    router.get("/plugins/servlet/applinks/listApplicationLinks", (req, res) => {
-      res.json({ message: "Welcome to bezkoder application." });
-    })
+  
   
     app.use('/api/tutorials', router);
   };
